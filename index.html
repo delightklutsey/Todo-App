@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ 
+  <link rel="stylesheet" href="./style.css"/>
+  
+  <title>Todo app</title>
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <div class="background"></div>
+ <div class="TodoHeading">
+    <div class="headandswitch"><span class="head">TODO</span> <img class="switch" src="./images/icon-moon.svg"/></div>
+    <!-- <div class="inputSection"><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><input  id="textValue" class="txtButton" type="text"/></div> -->
+  </div>
+<div id="TodoContainer">
+  <div draggable="true"  class="inputSection"><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><input  id="textValue" class="txtButton" type="text" value="Currently typing"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">Complete online Javascript course</span><img class="cross" src="./images/icon-cross.svg"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">Jog around the park 3x</span><img class="cross" src="./images/icon-cross.svg"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">10 minutes meditation</span><img class="cross" src="./images/icon-cross.svg"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">Read for 1 hour</span><img class="cross" src="./images/icon-cross.svg"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">Pick up groceries</span><img class="cross" src="./images/icon-cross.svg"/></div>
+  <div draggable="true"  class="item" ><span class="chkborder"><img class="check" src="./images/icon-check.svg"/></span><span class="text">Complete Todo App on Frontend Mentor</span><img class="cross" src="./images/icon-cross.svg"/></div>
+</div>
+<div class="buttom_control" id="task"><p class="first"><span id="count"></span> items left</p><p class="middle"><span id="all" style="color:hsl(220,98%,61%)">All</span> <span id="Active"> Active</span>  <span>Completed</span></p><p class="last">clear completed</p></div>
+
+<div style="text-align:center; margin-top:50px; margin-right:10px; color:hsl(233, 14%, 35%); cursor:default">Drag and Drop to reorder list</div>
+ 
+
+</body>
+</html>
